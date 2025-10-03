@@ -32,7 +32,7 @@ class HomePage extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Image.network(hotel.imageUrl, height: 120, width: double.infinity, fit: BoxFit.cover),
+                  Image.asset(hotel.imageUrl, height: 120, width: double.infinity, fit: BoxFit.cover),
                   Padding(
                     padding: const EdgeInsets.all(8.0),
                     child: Column(
