@@ -13,7 +13,16 @@ class HotelDetailPage extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
-            Image.network(hotel.imageUrl, height: 250, fit: BoxFit.cover),
+            Image(
+              image: ResizeImage(AssetImage(hotel.imageUrl), width: 800),
+              height: 250,
+              fit: BoxFit.cover,
+              errorBuilder: (context, error, stackTrace) => Container(
+                height: 250,
+                color: Colors.grey[300],
+                child: const Icon(Icons.broken_image, size: 64, color: Colors.grey),
+              ),
+            ),
             Padding(
               padding: const EdgeInsets.all(16.0),
               child: Column(
