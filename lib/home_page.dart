@@ -9,6 +9,7 @@ class HomePage extends StatelessWidget {
   final FavoritesController? favoritesController;
 
   const HomePage({super.key, this.themeController, this.favoritesController});
+W1
 
   // convenience factory used by MyApp
   factory HomePage.withControllers(
@@ -86,9 +87,9 @@ class HomePage extends StatelessWidget {
                               cacheWidth: 360,
                               errorBuilder: (context, error, stackTrace) =>
                                   Container(
-                                    height: 120,
-                                    color: Colors.grey[300],
-                                    child: const Icon(
+                                      height: 120,
+                                      color: Colors.grey[300],
+                                      child: const Icon(
                                       Icons.broken_image,
                                       size: 40,
                                       color: Colors.grey,
