@@ -82,7 +82,7 @@ class HomePage extends StatelessWidget {
                               height: 120,
                               width: double.infinity,
                               fit: BoxFit.cover,
-                              filterQuality: FilterQuality.low,
+                            filterQuality: FilterQuality.low,
                               cacheWidth: 360,
                               errorBuilder: (context, error, stackTrace) =>
                                   Container(
